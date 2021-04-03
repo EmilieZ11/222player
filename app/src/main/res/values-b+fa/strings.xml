@@ -10,33 +10,15 @@
         <item>مگابایت</item>
         <item>گیگابایت</item>
     </string-array>
+    <string name="visit">مشاهده</string>
 
     <!-- Main -->
     <string name="noPermWES">نرم افزار به کارت حافظه دسترسی ندارد.</string>
-    <string name="tbUpdate">بررسی برای بروزرسانی</string>
     <string name="tbAboutUs">درباره ما</string>
-    <string name="tbRefreshList">بروزرسانی فهرست</string>
-    <string name="tbSwitchToVideo">پخش فایل های ویدیوئی</string>
-    <string name="tbSwitchToAudio">پخش فایل های صوتی</string>
-    <string name="tbLastPlayed">آخرین پخش</string>
-    <string name="tbSettings">تنظیمات</string>
-    <string name="tbNight">حالت شب</string>
-    <string name="updating">درحال بروزرسانی&#8230;</string>
+    <string name="tbSettings">تنظیمات نرم افزار</string>
+    <string name="tbSubtitle">اضافه کردن زیرنویس</string>
     <string name="aboutUs">ما را در اینستاگرام دنبال کنید: @fulcrum1378</string>
-    <string name="updateSentence1">نسخه فعلی نرم افزار&#160;</string>
-    <string name="updateSentence2">&#160; می باشد, در حالی که ورژن&#160;</string>
-    <string name="updateSentence3">&#160;منتشر شده است. آیا می خواهید این نرم افزار را بروزرسانی کنید؟</string>
-    <string name="upToDate">نرم افزار شما بروز است.</string>
-    <string name="cfuError1">بررسی برای بروزرسانی ناموفق بود!</string>
-    <string name="cfuError2">فایل های بروزرسانی دانلود نشدند!</string>
-    <string name="cfuError3">ورژن این نرم افزار نامشخص می باشد!</string>
-    <string name="cfuError4">ورژن فعلی نرم افزار بطرز نامشخصی ایراد دارد!</string>
-    <string name="cfuError5">پیغام خطا:&#160;</string>
-    <string name="cfuReceived">اطلاعات دریافت شده:</string>
-    <string name="noInternet">لطفا وضعیت اینترنت دستگاه را چک بفرمایید.</string>
     <string name="toExit">برای خروج دوباره ضربه بزنید&#8230;</string>
-    <string name="noSound">شما حتی یک فایل صوتی هم در دستگاهتان ندارید.</string>
-    <string name="noVideo">شما حتی یک فیلم هم در دستگاهتان ندارید.</string>
     <string name="accessStorage">نرم افزار باید به کارت حافظه دسترسی پیدا کند.</string>
     <string name="endOfPlaylist">پایان فهرست!</string>
     <string name="startOfPlaylist">ابتدای فهرست!</string>
@@ -44,20 +26,19 @@
     <string name="musicInfoTitle">مشخصات فایل</string>
     <string name="mNormalDur">00:00 / 00:00</string>
     <string name="unreadable">فایل منتخب در فهرست موجود نمی باشد!</string>
-    <string name="onExitWhilePlaying">آیا واقعا میخواهید برنامه را ببندید؟ شما می توانید آنرا به پس زمینه فرستاده و اجازه دهید موسیقی همچنان پخش شود&#8230;</string>
-    <string name="onExitWhileVPlaying">آیا واقعا میخواهید برنامه را ببندید؟</string>
+    <string name="onExitWhilePlaying">آیا واقعا می خواهید برنامه را ببندید؟ شما می توانید آن را به پس زمینه فرستاده و اجازه دهید موسیقی همچنان پخش شود&#8230;</string>
+    <string name="onExitWhileVPlaying">آیا واقعا می خواهید برنامه را ببندید؟</string>
     <string name="errorOccurred">متاسفانه خطایی رخ داد!</string>
-    <string name="shuffleOn">انتخاب تصادفی روشن</string>
-    <string name="shuffleOff">انتخاب تصادفی خاموش</string>
+    <string name="shuffleOn">انتخاب تصادفی</string>
+    <string name="shuffleOff">انتخاب بترتیب</string>
     <string name="noRepeat">تکرار خاموش</string>
     <string name="repeatAll">تکرار همه</string>
     <string name="repeatOnce">تکرار یکی</string>
-    <string name="refreshed">بروزرسانی انجام شد</string>
     <string-array name="crop">
-        <item>اندازه واقعی</item>
-        <item>سازگار با صفحه</item>
-        <item>کشیده</item>
-        <item>برش داده شده</item>
+        <item>واقعی</item>
+        <item>سازگار</item>
+        <item>کشیدن</item>
+        <item>برش</item>
     </string-array>
     <string-array name="fileInfoList">
         <item>نوع</item>
@@ -69,19 +50,24 @@
         <item>مدت زمان</item>
         <item>آخرین تغییر</item>
     </string-array>
+    <string-array name="plInfoList">
+        <item>تعداد موارد</item>
+        <item>آخرین تغییر</item>
+        <item>تاریخ ایجاد</item>
+        <item>توضیحات</item>
+    </string-array>
     <string name="deleteFileT">حذف فایل</string>
     <string name="deleteFile">آیا از حذف نمودن این فایل اطمینان دارید؟\n\n</string>
+    <string name="deletePlaying">\n\nاین فایل هم اکنون روی نوار پخش است!!!</string>
+    <string name="deleteMass">آیا از حذف نمودن همه این فایل ها اطمینان دارید؟</string>
     <string name="couldntDelete">حذف فایل امکان پذیر نبود!</string>
-    <string name="deleted">فایل با موفقیت حذف گردید.</string>
-    <string name="couldntRename">تغییر نام فایل امکان پذیر نبود!</string>
-    <string name="renamed">فایل با موفقیت تغییر نام یافت.</string>
+    <string name="couldntDeleteSome">حذف برخی از فایل ها امکان پذیر نبود!</string>
+    <string name="couldntRename">تغییر نام دادن این فایل امکان پذیر نبود!</string>
     <string name="suchFileExists">فایل دیگری با این نام و نشان در حافظه موجود می باشد!</string>
-    <string name="askOnSwitchToVideo">آیا مطمئنید که می خواهید موزیک پلیر را به ویدیو پلیر تبدیل کنید؟</string>
-    <string name="askOnSwitchToAudio">آیا مطمئنید که می خواهید ویدیو پلیر را به موزیک پلیر تبدیل کنید؟</string>
-    <string name="visit">مشاهده</string>
     <string name="myInsta">https://www.instagram.com/fulcrum1378/</string>
     <string name="audios">فایل صوتی</string>
     <string name="videos">ویدیو</string>
+    <string name="items">مورد</string>
     <string name="couldNotGainAudioFocus">بلندگوی دستگاه مشغول است.</string>
     <string name="mpNotSeekable">جابجایی ممکن نیست.</string>
     <string name="cannotOpenFile">بازکردن این فایل ممکن نیست.</string>
@@ -92,15 +78,86 @@
     <string name="lowSystemLevel">سیستم شما ضعیف است!</string>
     <string name="badInterleaving">این فایل بهم ریخته است؛ ممکن است در میان پخش خطاهایی را بوجود بیاورد.</string>
     <string name="vpTrackLagging">این ویدیو بسیار سنگین است و ممکن است فقط صوت آن بخوبی پخش شود.</string>
-    <string name="vpUnsupportedST">زیرنویس ناخوانا می باشد.</string>
+    <string name="vpUnsupportedST">این زیرنویس ناخوانا می باشد.</string>
     <string name="vpSTTimedOut">باز کردن زیرنویس امکان پذیر نیست!</string>
+    <string name="mMAudAddToPL">اضافه کردن به فهرست پخش</string>
+    <string name="mMAudDlt">حذف</string>
+    <string name="mMAudProp">مشخصات</string>
+    <string name="mMPliRemove">حذف از فهرست پخش</string>
+    <string name="mMPliDelete">حذف فایل</string>
+    <string name="mSlctAdd">اضافه همه به فهرست پخش</string>
+    <string name="mSlctDlt">حذف همه</string>
+    <string name="mSlctMark">انتخاب همه</string>
+    <string name="mSlctUnmark">انتخاب هیچ</string>
+    <string name="mSlctClose">بستن</string>
+    <string name="mNavTAudios">صداها</string>
+    <string name="mNavTVideos">ویدیو ها</string>
+    <string name="mNavTPlaylists">فهرست های پخش</string>
+    <string name="mNavTSettings">تنظیمات پخش</string>
+    <string name="mPLExists">این صدا از قبل در این فهرست پخش وجود داشت!</string>
+    <string name="mBM1PLEditor">ویرایش فهرست های پخش</string>
+    <string name="mBM1PLDel">آیا از حذف این فهرست پخش و تمام موارد آن اطمینان دارید؟</string>
+    <string name="mBM1PLDelMass">آیا از حذف تمام این فهرست های پخش و مواردشان اطمینان دارید؟</string>
+    <string name="mBM1PLItemDelMass">آیا از حذف این موارد فهرست پخش اطمینان دارید؟</string>
+    <string name="fileNotFound">فایل در حافظه پیدا نشد!</string>
+    <string name="mNewPL">فهرست جدید&#8230;</string>
+    <string name="plExists">فهرست پخش دیگری با این نام موجود می باشد!</string>
+    <string name="noPlaylists">هیچ فهرست پخشی وجود ندارد.</string>
+    <string name="mGetST">یک زیرنویس انتخاب کنید&#8230;</string>
+    <string name="unsupportedST">متاسفانه، از این نوع زیرنویس پشتیبانی نمی شود!</string>
+    <string name="plInfoTitle">مشخصات فهرست پخش</string>
+    <string name="typeSomething">چیزی بنویسید&#8230;</string>
+    <string name="notExists">این فایل وجود خارجی ندارد!</string>
+    <string name="nItemsSelected">مورد انتخاب شد</string>
+    <string name="discardChanges">آیا مطمئنید که می خواهید تمام تغییراتی که بوجود آورده اید را کنسل کنید؟</string>
+
+    <!-- display_settings.xml -->
+    <string name="mDSEq">برابرساز (اکوالایزر)</string>
+    <string name="mDSVr">صدای فراگیر (سوراند)</string>
+    <string name="mDSBB">بیس</string>
+    <string name="mDSPR">حالت پخش</string>
+    <string-array name="rvPresets">
+        <item>هیچکدام</item>
+        <item>بشقاب</item>
+        <item>اتاق کوچک</item>
+        <item>اتاق متوسط</item>
+        <item>اتاق بزرگ</item>
+        <item>سالن متوسط</item>
+        <item>سالن بزرگ</item>
+    </string-array>
+    <string-array name="eqModes">
+        <item>پیش فرض</item>
+        <item>راک</item>
+        <item>رپ</item>
+        <item>گرانج</item>
+        <item>متال</item>
+        <item>رقص</item>
+        <item>تکنو</item>
+        <item>کانتری</item>
+        <item>جاز</item>
+        <item>آکوستیک</item>
+        <item>فولک</item>
+        <item>عصر جدید</item>
+        <item>کلاسیک</item>
+        <item>بلوز</item>
+        <item>اولدیز</item>
+        <item>رگی</item>
+        <item>اپرا</item>
+        <item>سوینگ</item>
+        <item>سخنرانی</item>
+        <item>موسیقی 56K</item>
+        <item>موسیقی 28K</item>
+        <item>شخصی</item>
+    </string-array>
+    <string name="mDSLE">افزایش صدا</string>
+    <string name="mDSPBS">سرعت پخش</string>
+    <string name="mDSPBP">زیر/بمی صدا</string>
+    <string name="mDSVS">اندازه ویدیو</string>
 
     <!-- Settings -->
-    <string name="sbnvApp">نرم افزار</string>
-    <string name="sbnvAudio">صوت</string>
-    <string name="sbnvVideo">ویدیو</string>
     <string name="sWallpaper">کاغذ دیواری ها</string>
     <string name="sAtLeastOneWP">حداقل یک تصویر باید انتخاب شده باشد.</string>
+    <string name="selectAPic">یک تصویر انتخاب کنید&#8230;</string>
     <string name="sColorPrimaries">تم</string>
     <string name="sCP1">رنگ اول (اکثر آیکون ها و متون):</string>
     <string name="sCP2">رنگ دوم (اکثر رنگ های پس زمینه):</string>
@@ -108,6 +165,7 @@
     <string name="sArrangement">ترتیب فهرست</string>
     <string name="sFArrangement">پوشه ها:</string>
     <string name="sMArrangement">صوت/فیلم:</string>
+    <string name="sPArrangement">فهرست های پخش:</string>
     <string-array name="sFRadios">
         <item>نام</item>
         <item>تعداد فایل ها</item>
@@ -125,11 +183,15 @@
         <item>نوع</item>
         <item>آخرین تغییر</item>
     </string-array>
+    <string-array name="sPRadios">
+        <item>نام</item>
+        <item>تعداد موارد</item>
+        <item>آخرین تغییر</item>
+        <item>تاریخ ایجاد</item>
+    </string-array>
     <string name="sArngAsc">صعودی</string>
     <string name="sArngDsc">نزولی</string>
     <string name="sFont">نوشتار</string>
     <string name="sFontTV">%</string>
     <string name="sFAB">برو بالا&#8230;</string>
-
-    <!--<string name=""></string>-->
 </resources>

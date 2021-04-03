@@ -24,7 +24,7 @@
             android:layout_marginStart="19dp"
             android:layout_marginTop="19dp"
             android:layout_marginBottom="19dp"
-            android:src="@drawable/edit_file_1_white"
+            android:src="@drawable/edit_file_2_white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +32,7 @@
         <HorizontalScrollView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="12dp"
             android:layout_marginEnd="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/fiClose"
@@ -93,14 +93,9 @@
 
                     <ImageView
                         android:id="@+id/fiAlbumArt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="85dp"
-                        android:adjustViewBounds="true"
-                        android:background="@color/fiAlbumArt"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/fiAlbumArt" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -109,14 +104,17 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
                     android:minHeight="85dp"
+                    android:paddingStart="9dp"
                     android:paddingTop="5dp"
                     android:paddingEnd="10dp"
                     android:paddingBottom="5dp">
 
                     <EditText
                         android:id="@+id/fiNameEdit"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
                         android:padding="3dp"
                         android:textColor="@color/fiName"
                         android:textSize="18sp"
@@ -129,7 +127,7 @@
 
                     <TextView
                         android:id="@+id/fiName"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/fiName"
                         android:textSize="18sp"

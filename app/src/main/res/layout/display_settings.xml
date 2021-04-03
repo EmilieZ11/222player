@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mSettings"
+    style="@style/mNavLL">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/mDSIcons"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout style="@style/mDSIconP">
+
+            <View style="@style/mDSIconSelected" />
+
+            <ImageView
+                style="@style/mDSIcon"
+                android:src="@drawable/sound_2_blue" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/mDSIconP">
+
+            <View style="@style/mDSIconSelected" />
+
+            <ImageView
+                style="@style/mDSIcon"
+                android:src="@drawable/video_1_blue" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/mDSLL">
+
+        <LinearLayout style="@style/mDSSect">
+
+            <LinearLayout style="@style/mDSSectTitle">
+
+                <ImageView style="@style/mDSSectTIV" />
+
+                <TextView
+                    style="@style/mDSSectTTV"
+                    android:text="@string/mDSEq" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mSAEq"
+                style="@style/mDSSectBodyShort"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layoutDirection="ltr" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/mDSSectBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/mSAEqSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_bg_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/mSAEqSpnMark"
+                    style="@style/sArngSpMark"
+                    app:layout_constraintEnd_toEndOf="@id/mSAEqSpinner"
+                    app:layout_constraintTop_toTopOf="@id/mSAEqSpinner" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/mDSSect">
+
+            <LinearLayout style="@style/mDSSectTitle">
+
+                <ImageView style="@style/mDSSectTIV" />
+
+                <TextView
+                    style="@style/mDSSectTTV"
+                    android:text="@string/mDSPR" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mSAPR"
+                style="@style/mDSSectBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/mSAPRSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/spinner_bg_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    style="@style/sArngSpMark"
+                    app:layout_constraintEnd_toEndOf="@id/mSAPRSpinner"
+                    app:layout_constraintTop_toTopOf="@id/mSAPRSpinner" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mSAPBSLL"
+            style="@style/mDSSect"
+            android:visibility="gone">
+
+            <LinearLayout style="@style/mDSSectTitle">
+
+                <ImageView style="@style/mDSSectTIV" />
+
+                <TextView
+                    style="@style/mDSSectTTV"
+                    android:text="@string/mDSPBS" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/mDSSectBodyShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SeekBar
+                    style="@style/mDSSB3_Normal1"
+                    android:layout_marginEnd="32dp"
+                    android:max="200"
+                    android:progress="100"
+                    app:layout_constraintBottom_toBottomOf="@id/mSAPBSReset"
+                    app:layout_constraintTop_toTopOf="@id/mSAPBSReset" />
+
+                <ImageView
+                    android:id="@+id/mSAPBSReset"
+                    style="@style/mSAReset" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mSAPBPLL"
+            style="@style/mDSSect"
+            android:visibility="gone">
+
+            <LinearLayout style="@style/mDSSectTitle">
+
+                <ImageView style="@style/mDSSectTIV" />
+
+                <TextView
+                    style="@style/mDSSectTTV"
+                    android:text="@string/mDSPBP" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/mDSSectBodyShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SeekBar
+                    style="@style/mDSSB3_Normal1"
+                    android:layout_marginEnd="32dp"
+                    android:max="200"
+                    android:progress="100"
+                    app:layout_constraintBottom_toBottomOf="@id/mSAPBPReset"
+                    app:layout_constraintTop_toTopOf="@id/mSAPBPReset" />
+
+                <ImageView
+                    android:id="@+id/mSAPBPReset"
+                    style="@style/mSAReset" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/mDSSect">
+
+            <LinearLayout style="@style/mDSSectTitle">
+
+                <ImageView style="@style/mDSSectTIV" />
+
+                <TextView
+                    style="@style/mDSSectTTV"
+                    android:text="@string/mDSVr" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mSAVr"
+                style="@style/mDSSectBodyShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SeekBar
+                    style="@style/mDSSB3_Normal1"
+                    android:max="1000" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/mDSSect">
+
+            <LinearLayout style="@style/mDSSectTitle">
+
+                <ImageView style="@style/mDSSectTIV" />
+
+                <TextView
+                    style="@style/mDSSectTTV"
+                    android:text="@string/mDSBB" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mSABB"
+                style="@style/mDSSectBodyShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SeekBar
+                    style="@style/mDSSB3_Normal1"
+                    android:max="1000" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mSALELL"
+            style="@style/mDSSect"
+            android:visibility="gone">
+
+            <LinearLayout style="@style/mDSSectTitle">
+
+                <ImageView style="@style/mDSSectTIV" />
+
+                <TextView
+                    style="@style/mDSSectTTV"
+                    android:text="@string/mDSLE" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/mDSSectBodyShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SeekBar style="@style/mDSSB3_Normal1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mDSLL"
+        android:visibility="gone">
+
+        <LinearLayout style="@style/mDSSect">
+
+            <LinearLayout style="@style/mDSSectTitle">
+
+                <ImageView style="@style/mDSSectTIV" />
+
+                <TextView
+                    style="@style/mDSSectTTV"
+                    android:text="@string/mDSVS" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mSVCrop"
+                style="@style/mDSSectBodyShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    style="@style/mSVCropBG"
+                    app:layout_constraintBottom_toBottomOf="@id/mSVCrop1"
+                    app:layout_constraintLeft_toLeftOf="@id/mSVCrop1"
+                    app:layout_constraintRight_toRightOf="@id/mSVCrop1"
+                    app:layout_constraintTop_toTopOf="@id/mSVCrop1" />
+
+                <View
+                    style="@style/mSVCropBG"
+                    app:layout_constraintBottom_toBottomOf="@id/mSVCrop2"
+                    app:layout_constraintLeft_toLeftOf="@id/mSVCrop2"
+                    app:layout_constraintRight_toRightOf="@id/mSVCrop2"
+                    app:layout_constraintTop_toTopOf="@id/mSVCrop2" />
+
+                <View
+                    style="@style/mSVCropBG"
+                    app:layout_constraintBottom_toBottomOf="@id/mSVCrop3"
+                    app:layout_constraintLeft_toLeftOf="@id/mSVCrop3"
+                    app:layout_constraintRight_toRightOf="@id/mSVCrop3"
+                    app:layout_constraintTop_toTopOf="@id/mSVCrop3" />
+
+                <View
+                    style="@style/mSVCropBG"
+                    app:layout_constraintBottom_toBottomOf="@id/mSVCrop4"
+                    app:layout_constraintLeft_toLeftOf="@id/mSVCrop4"
+                    app:layout_constraintRight_toRightOf="@id/mSVCrop4"
+                    app:layout_constraintTop_toTopOf="@id/mSVCrop4" />
+
+                <LinearLayout
+                    android:id="@+id/mSVCrop1"
+                    style="@style/mSVCrop"
+                    app:layout_constraintEnd_toStartOf="@id/mSVCrop2"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        style="@style/mSVCropIV"
+                        android:src="@drawable/crop_1_100" />
+
+                    <TextView
+                        style="@style/mSVCropTV"
+                        android:text="Real Size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mSVCrop2"
+                    style="@style/mSVCrop"
+                    app:layout_constraintEnd_toStartOf="@id/mSVCrop3"
+                    app:layout_constraintStart_toEndOf="@id/mSVCrop1">
+
+                    <ImageView
+                        style="@style/mSVCropIV"
+                        android:src="@drawable/crop_1_fit" />
+
+                    <TextView
+                        style="@style/mSVCropTV"
+                        android:text="Fit to Screen" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mSVCrop3"
+                    style="@style/mSVCrop"
+                    app:layout_constraintEnd_toStartOf="@id/mSVCrop4"
+                    app:layout_constraintStart_toEndOf="@id/mSVCrop2">
+
+                    <ImageView
+                        style="@style/mSVCropIV"
+                        android:src="@drawable/crop_1_stretch" />
+
+                    <TextView
+                        style="@style/mSVCropTV"
+                        android:text="Stretch" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mSVCrop4"
+                    style="@style/mSVCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/mSVCrop3">
+
+                    <ImageView
+                        style="@style/mSVCropIV"
+                        android:src="@drawable/crop_1_crop" />
+
+                    <TextView
+                        style="@style/mSVCropTV"
+                        android:text="Crop" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

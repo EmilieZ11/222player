@@ -1,0 +1,212 @@
+<resources>
+    <!-- GLOBAL -->
+    <string name="app_name">222 Player</string>
+    <string name="ok1">OK</string>
+    <string name="yes1">Sim</string>
+    <string name="no1">Não</string>
+    <string-array name="size">
+        <item>Bytes</item>
+        <item>KB</item>
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string name="visit">Visita</string>
+
+    <!-- Main -->
+    <string name="noPermWES">O aplicativo não tem acesso ao armazenamento externo.</string>
+    <string name="tbAboutUs">Sobre Nós</string>
+    <string name="tbSettings">Configurações do Aplicativo</string>
+    <string name="tbSubtitle">Adicionar Legenda(s)</string>
+    <string name="aboutUs">Siga-nos no Instagram: @fulcrum1378</string>
+    <string name="toExit">Toque duas vezes para sair&#8230;</string>
+    <string name="accessStorage">O aplicativo precisa acessar o armazenamento externo.</string>
+    <string name="endOfPlaylist">Fim da playlist!</string>
+    <string name="startOfPlaylist">Início da lista de reprodução!</string>
+    <string name="audioPlayer">Reprodutor de Mídia</string>
+    <string name="musicInfoTitle">Propriedades do Arquivo</string>
+    <string name="mNormalDur">00:00 / 00:00</string>
+    <string name="unreadable">Não foi possível ler o arquivo selecionado!</string>
+    <string name="onExitWhilePlaying">Deseja realmente fechar o aplicativo? Você pode minimizar o aplicativo para continuar reproduzindo em segundo plano&#8230;</string>
+    <string name="onExitWhileVPlaying">Deseja realmente fechar o aplicativo?</string>
+    <string name="errorOccurred">Infelizmente ocorreu um erro!</string>
+    <string name="shuffleOn">Baralhar</string>
+    <string name="shuffleOff">Sem Embaralhamento</string>
+    <string name="noRepeat">Sem Repetição</string>
+    <string name="repeatAll">Repita Tudo</string>
+    <string name="repeatOnce">Repita Uma Vez</string>
+    <string-array name="crop">
+        <item>Real</item>
+        <item>Em Forma</item>
+        <item>Esticam</item>
+        <item>Colheita</item>
+    </string-array>
+    <string-array name="fileInfoList">
+        <item>Tipo</item>
+        <item>Caminho</item>
+        <item>Tamanho</item>
+        <item>Título</item>
+        <item>Álbum</item>
+        <item>Artista</item>
+        <item>Comprimento</item>
+        <item>Última Modificação</item>
+    </string-array>
+    <string-array name="plInfoList">
+        <item>Número de Itens</item>
+        <item>Data Modificada</item>
+        <item>Data Criada</item>
+        <item>Descrição</item>
+    </string-array>
+    <string name="deleteFileT">Excluir Arquivo</string>
+    <string name="deleteFile">Tem certeza de que deseja excluir este arquivo?\n\n</string>
+    <string name="deletePlaying">\n\nESTE ARQUIVO ESTÁ SENDO JOGADO AGORA!!!</string>
+    <string name="deleteMass">Tem certeza de que deseja excluir todos esses arquivos?</string>
+    <string name="couldntDelete">Não foi possível excluir o arquivo selecionado!</string>
+    <string name="couldntDeleteSome">Não foi possível excluir alguns dos arquivos selecionados!</string>
+    <string name="couldntRename">Não foi possível renomear o arquivo selecionado!</string>
+    <string name="suchFileExists">Há outro arquivo no armazenamento com esse endereço!</string>
+    <string name="myInsta">https://www.instagram.com/fulcrum1378/</string>
+    <string name="audios">Áudios</string>
+    <string name="videos">Vídeos</string>
+    <string name="items">Itens</string>
+    <string name="couldNotGainAudioFocus">Não foi possível obter o foco do áudio.</string>
+    <string name="mpNotSeekable">A busca não é possível.</string>
+    <string name="cannotOpenFile">Não é possível abrir este arquivo.</string>
+    <string name="unknownErrorOccurred">Infelizmente ocorreu um erro desconhecido!</string>
+    <string name="mpUnreadable">O arquivo não está legível.</string>
+    <string name="mpUnsupported">O arquivo é legível, mas o dispositivo não suporta esse tipo.</string>
+    <string name="mpTimedOut">A abertura do arquivo demorou mais que o normal!</string>
+    <string name="lowSystemLevel">Sistema de baixo nível!</string>
+    <string name="badInterleaving">Este arquivo está intercalado incorretamente; isso pode causar erros durante a reprodução.</string>
+    <string name="vpTrackLagging">Este vídeo é muito complexo e, possivelmente, apenas o áudio será reproduzido corretamente.</string>
+    <string name="vpUnsupportedST">The subtitle is not supported.</string>
+    <string name="vpSTTimedOut">Esta legenda não é suportada.</string>
+    <string name="mMAudAddToPL">Adicionar à Playlist</string>
+    <string name="mMAudDlt">Excluir</string>
+    <string name="mMAudProp">Propriedades</string>
+    <string name="mMPliRemove">Remover da Playlist</string>
+    <string name="mMPliDelete">Excluir Arquivo</string>
+    <string name="mSlctAdd">Adicionar Tudo à Playlist</string>
+    <string name="mSlctDlt">Excluir Tudo</string>
+    <string name="mSlctMark">Marcar Todos</string>
+    <string name="mSlctUnmark">Desmarcar Tudo</string>
+    <string name="mSlctClose">Fechar</string>
+    <string name="mNavTAudios">Áudios</string>
+    <string name="mNavTVideos">Vídeos</string>
+    <string name="mNavTPlaylists">Playlists</string>
+    <string name="mNavTSettings">Configurações de Reprodução</string>
+    <string name="mPLExists">Este áudio já existe nesta playlist!</string>
+    <string name="mBM1PLEditor">Editar Playlists</string>
+    <string name="mBM1PLDel">Tem certeza de que deseja excluir esta playlist com todos os seus itens?</string>
+    <string name="mBM1PLDelMass">Tem certeza de que deseja excluir todas essas playlists com seus itens?</string>
+    <string name="mBM1PLItemDelMass">Tem certeza de que deseja excluir todos esses itens da playlist?</string>
+    <string name="fileNotFound">O arquivo não foi encontrado no armazenamento!</string>
+    <string name="mNewPL">Nova Playlist&#8230;</string>
+    <string name="plExists">Já existe outra playlist com esse nome!</string>
+    <string name="noPlaylists">Não há playlists.</string>
+    <string name="mGetST">Selecione uma legenda&#8230;</string>
+    <string name="unsupportedST">Infelizmente, esta legenda não é suportada!</string>
+    <string name="plInfoTitle">Propriedades da Playlist</string>
+    <string name="typeSomething">Digite algo&#8230;</string>
+    <string name="notExists">Este arquivo não existe!</string>
+    <string name="nItemsSelected">Iten(s) Selecionados</string>
+    <string name="discardChanges">Tem certeza de que deseja descartar todas as alterações que já fez?</string>
+
+    <!-- display_settings.xml -->
+    <string name="mDSEq">Equalizador</string>
+    <string name="mDSVr">O Som ao Redor</string>
+    <string name="mDSBB">Graves</string>
+    <string name="mDSPR">Modo de Reprodução</string>
+    <string-array name="rvPresets">
+        <item>Nenhum</item>
+        <item>Prato</item>
+        <item>Quarto Pequeno</item>
+        <item>Quarto Médio</item>
+        <item>Quarto grande</item>
+        <item>médio Salão</item>
+        <item>Grande Salão</item>
+    </string-array>
+    <string-array name="eqModes">
+        <item>Padrão</item>
+        <item>Rock</item>
+        <item>Rap</item>
+        <item>Grunge</item>
+        <item>Metal</item>
+        <item>Dança</item>
+        <item>Techno</item>
+        <item>Country</item>
+        <item>Jazz</item>
+        <item>Acústica</item>
+        <item>Folclórica</item>
+        <item>Nova Era</item>
+        <item>Clássica</item>
+        <item>Blues</item>
+        <item>Oldies</item>
+        <item>Reggae</item>
+        <item>Ópera</item>
+        <item>Swing</item>
+        <item>Discurso</item>
+        <item>Música 56K</item>
+        <item>Música 28K</item>
+        <item>Personalizado</item>
+    </string-array>
+    <string name="mDSLE">Volume Boost</string>
+    <string name="mDSPBS">Velocidade de Reprodução</string>
+    <string name="mDSPBP">Passo do Som</string>
+    <string name="mDSVS">Tamanho do Vídeo</string>
+
+    <!-- Settings -->
+    <string name="sWallpaper">Papéis de Parede</string>
+    <string name="sAtLeastOneWP">Pelo menos uma imagem deve ser selecionada.</string>
+    <string name="selectAPic">Selecione uma foto&#8230;</string>
+    <string name="sColorPrimaries">Tema</string>
+    <string name="sCP1">Cor A (maioria dos ícones e textos):</string>
+    <string name="sCP2">Cor B (maioria das cores de fundo):</string>
+    <string name="sCPDefault">Padrão</string>
+    <string name="sArrangement">Arranjo de Lista</string>
+    <string name="sFArrangement">Pastas:</string>
+    <string name="sMArrangement">Áudio/Vídeo:</string>
+    <string name="sPArrangement">Playlists:</string>
+    <string-array name="sFRadios">
+        <item>Nome</item>
+        <item>Número de arquivos</item>
+        <item>Tamanho</item>
+        <item>Armazenamento</item>
+        <item>Data modificada</item>
+    </string-array>
+    <string-array name="sMRadios">
+        <item>Nome do arquivo</item>
+        <item>Título</item>
+        <item>Tamanho</item>
+        <item>Comprimento</item>
+        <item>Álbum</item>
+        <item>Artista</item>
+        <item>Tipo</item>
+        <item>Data modificada</item>
+    </string-array>
+    <string-array name="sPRadios">
+        <item>Nome</item>
+        <item>Número de ítens</item>
+        <item>Data modificada</item>
+        <item>Data criada</item>
+    </string-array>
+    <string name="sArngAsc">Ascendente</string>
+    <string name="sArngDsc">descendente</string>
+    <string name="sFont">Fonte</string>
+    <string-array name="sFonts">
+        <item>casual</item>
+        <item>cursive</item>
+        <item>monospace</item>
+        <item>sans-serif</item>
+        <item>sans-serif-black</item>
+        <item>sans-serif-condensed</item>
+        <item>sans-serif-condensed-light</item>
+        <item>sans-serif-light</item>
+        <item>sans-serif-medium</item>
+        <item>sans-serif-smallcaps</item>
+        <item>sans-serif-thin</item>
+        <item>serif</item>
+        <item>serif-monospace</item>
+    </string-array>
+    <string name="sFontTV">%</string>
+    <string name="sFAB">Ir Para Cima&#8230;</string>
+</resources>

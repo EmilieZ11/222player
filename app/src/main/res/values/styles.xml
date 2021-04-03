@@ -7,13 +7,20 @@
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
         <item name="android:statusBarColor" tools:ignore="NewApi">@color/statusBarColor</item>
         <item name="android:windowBackground">@color/windowBackground</item>
-        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/navigationBarColor</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/navigationBarColor
+        </item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <style name="Motor1">
         <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">1dp</item>
         <item name="android:visibility">invisible</item>
+        <item name="layout_constraintBottom_toTopOf">parent</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
     </style>
 
     <style name="TBPopupTheme1" parent="ThemeOverlay.AppCompat.Light">
@@ -22,8 +29,13 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <style name="TBPopupTheme1CngCP" parent="@style/TBPopupTheme1">
+        <item name="android:textColor">#000</item>
+        <item name="android:background">#FFF</item>
+    </style>
+
     <style name="BMButton1">
-        <item name="android:background">@drawable/square_1_darkblue_1_to_blue_1_xml</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:paddingStart">30dp</item>
         <item name="android:paddingTop">8dp</item>
         <item name="android:paddingEnd">30dp</item>
@@ -35,55 +47,21 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="Toolbar1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="maxButtonHeight">?attr/actionBarSize</item>
+        <item name="popupTheme">@style/TBPopupTheme1</item>
+        <item name="subtitleTextColor">@color/mToolbarT</item>
+        <item name="title">@string/app_name</item>
+        <item name="titleTextColor">@color/mToolbarT</item>
+        <item name="android:background">@color/mToolbarV</item>
+    </style>
+
 
     <!-- Main -->
-    <!--<style name="mToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
-        <item name="colorControlNormal">@color/mToolbarNav</item>&lt;!&ndash; colour of the button of overflow menu &ndash;&gt;
-        <item name="android:textColorSecondary">@color/mToolbarNav</item>&lt;!&ndash; colour of submenus in the overflow menu &ndash;&gt;
-    </style>-->
-
-    <style name="mClItem">
-        <item name="android:paddingStart">5dp</item>
-        <item name="android:paddingTop">10dp</item><!--12dp-->
-        <item name="android:paddingEnd">10dp</item>
-        <item name="android:paddingBottom">10dp</item><!--12dp-->
-        <item name="android:background">@drawable/square_1_tp_to_white_alpha_xml
-        </item><!--square_1_tp_to_blue_1_alpha_xml-->
-    </style>
-
-    <style name="mIvItem">
-        <item name="android:adjustViewBounds">true</item><!-- SO IMPORTANT -->
-        <item name="android:paddingTop">3dp</item>
-    </style>
-
-    <style name="mTvIvItem">
-        <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:background">#EEFFFFFF</item>
-        <item name="android:paddingLeft">2dp</item>
-        <item name="android:paddingTop">1dp</item>
-        <item name="android:paddingRight">2dp</item>
-        <item name="android:paddingBottom">1dp</item>
-        <item name="android:minWidth">20dp</item>
-        <item name="android:textAlignment">center</item>
-    </style>
-
-    <style name="mLlItemContents">
-        <item name="android:paddingStart">5dp</item>
-    </style>
-
-    <style name="mTvItem">
-        <item name="android:textSize">18sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="mTvItemDesc">
-        <item name="android:textSize">14sp</item>
-        <item name="android:paddingTop">5dp</item>
-    </style>
-
     <style name="mBtnAlpha">
         <item name="android:alpha">0.92</item>
     </style>
@@ -106,23 +84,272 @@
     </style>
 
     <style name="mSideBtnsBorders" parent="@style/mBtnAlpha">
-        <item name="android:layout_width">6.349dp</item>
+        <item name="android:layout_width">6.349206349206349dp</item>
         <item name="android:layout_height">40dp</item>
-        <item name="android:src">@drawable/btnmenu_1_borders</item>
+        <item name="android:background">@drawable/btnmenu_1_borders</item>
     </style>
 
     <style name="mSideBtnsBorderRests" parent="@style/mBtnAlpha">
-        <item name="android:layout_width">6.349dp</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:src">@drawable/btnmenu_1_borders_rest</item>
+        <item name="android:layout_width">6.349206349206349dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/btnmenu_1_borders_rest</item>
     </style>
 
-    <style name="ProgressDialogue1" parent="Theme.AppCompat.Light.Dialog.Alert">
-        <item name="android:textColorPrimary">@color/PD1T</item>
-        <item name="android:textColor">@color/PD1T</item>
-        <item name="android:background">@color/PD1V</item>
-        <item name="colorAccent">@color/PD1T</item>
+    <style name="fiItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">10</item>
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:paddingBottom">11dp</item>
+    </style>
+
+    <style name="fiAttr">
         <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/fiAttr</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">2dp</item>
+    </style>
+
+    <style name="fiValue">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/fiValue</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+    <style name="fiButton">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+    <style name="mNavSV">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="mNavLL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="mBadge">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">2.5</item>
+    </style>
+
+    <style name="mBadgeBG">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/mBadgeBG</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="mBadgeBT">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@color/mBadgeBT</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintWidth_percent">0.85</item>
+        <item name="layout_constraintHorizontal_bias">0</item>
+    </style>
+
+    <style name="mBTShine">
+        <item name="android:alpha">0</item>
+        <item name="android:src">@drawable/shine_4_white</item>
+    </style>
+
+    <style name="mBTNShine" parent="@style/mBTShine">
+        <item name="android:layout_width">57dp</item><!--64dp-->
+        <item name="android:layout_height">57dp</item>
+        <item name="android:scaleX">1.1228</item>
+    </style>
+
+    <style name="mSlctBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintStart_toStartOf">@id/mSlctBG</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <style name="mAddToPL" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">#FFF</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="mSV">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">9dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingRight">9dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@color/mSVV</item>
+        <item name="android:textColor">@color/mSVT</item>
+    </style>
+
+    <style name="ivMove">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@drawable/square_1_tp_to_white_alpha_xml</item>
+        <item name="android:src">@drawable/play_3_ntf</item>
+    </style>
+
+
+    <!-- display_settings.xml -->
+    <style name="mDSIconP">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="mDSIconSelected">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/textColorPrimary</item>
+    </style>
+
+    <style name="mDSIcon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="mDSLL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">7dp</item>
+    </style>
+
+    <style name="mDSSect">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">25dp</item>
+    </style>
+
+    <style name="mDSSectTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="mDSSectTIV">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:src">@drawable/play_3_ntf</item>
+    </style>
+
+    <style name="mDSSectTTV">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mDSSectBody">
+        <item name="android:layout_marginStart">18dp</item>
+        <item name="android:layout_marginEnd">18dp</item>
+    </style>
+
+    <style name="mDSSectBodyShort">
+        <item name="android:layout_marginStart">9dp</item>
+        <item name="android:layout_marginEnd">9dp</item>
+    </style>
+
+    <style name="mSAPRSpinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">9dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="mDSSB3_Normal1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:progressDrawable">@drawable/seekbar_3_xml</item>
+        <item name="android:thumb">@drawable/sb3_thumb</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <style name="mSAReset">
+        <item name="android:layout_width">27dp</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:background">@drawable/square_1_tp_to_white_alpha_xml</item>
+        <item name="android:src">@drawable/repeat_2_blue</item>
+        <item name="android:padding">3dp</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="mSVCrop">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/square_1_tp_to_white_alpha_xml</item>
+        <item name="android:orientation">vertical</item>
+        <item name="layout_constraintWidth_percent">0.25</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="mSVCropBG">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:alpha">0.48</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="mSVCropIV">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:maxHeight">55dp</item>
+    </style>
+
+    <style name="mSVCropTV">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 
@@ -137,11 +364,170 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:adjustViewBounds">true</item>
-        <item name="android:padding">5dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:background">@drawable/square_1_tp_to_blue_1_alpha_xml</item>
     </style>
 
 
-    <!--<style name="">
-        <item name=""></item>
-    </style>-->
+    <!-- Settings -->
+    <style name="sSect">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:background">@color/sSect</item>
+    </style>
+
+    <style name="sSectTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingStart">9dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@color/sSectTitle</item>
+    </style>
+
+    <style name="sSectTIV">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:src">@drawable/play_3_ntf</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="sSectTTV">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">2dp</item>
+    </style>
+
+    <style name="sSectBody">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="sClWP">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="sBGShowerBtn">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/square_1_tp_to_white_alpha_xml</item>
+    </style>
+
+    <style name="sCPLL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="sCPTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="sCPTV">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/sCPTV</item>
+        <item name="android:textSize">15sp</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+    <style name="sCPDEF">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:text">@string/sCPDefault</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="sCPSB">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">19dp</item>
+        <item name="android:max">255</item>
+        <item name="android:thumb">@drawable/sb2_thumb</item>
+        <item name="android:progressDrawable">@drawable/seekbar_2_xml</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="sArngTR">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">40dp</item>
+    </style>
+
+    <style name="sArngTV">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintWidth_percent">0.4</item>
+    </style>
+
+    <style name="sArngSp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/spinner_bg_2</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintWidth_percent">0.5</item>
+        <item name="android:minHeight">30dp</item>
+    </style>
+
+    <style name="sArngSw">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/play_3_ntf</item>
+        <item name="android:rotation">90</item>
+        <item name="android:background">@drawable/solid_blue_circle</item>
+        <item name="android:padding">9dp</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="android:layout_marginEnd">6dp</item>
+    </style>
+
+    <style name="sArngSpMark">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:src">@drawable/play_3_ntf</item>
+        <item name="android:rotation">90</item>
+        <item name="android:padding">9dp</item>
+    </style>
 </resources>

@@ -13,32 +13,42 @@
         android:id="@+id/sMotor"
         style="@style/Motor1" />
 
+    <ImageView
+        android:id="@+id/sShwBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/sToolbar"
         style="@style/Toolbar1"
-        android:background="@color/sToolbarV"
         app:navigationIcon="@drawable/back_1_blue"
         app:subtitle="@string/tbSettings" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="@color/sTBBorderBottom"
-        app:layout_constraintTop_toBottomOf="@id/sToolbar" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/sBody"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/sBody"
-        app:layout_constraintBottom_toTopOf="@id/sBNV"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="@id/sToolbar"
         app:layout_constraintRight_toRightOf="@id/sToolbar"
         app:layout_constraintTop_toBottomOf="@id/sToolbar">
 
-        <ScrollView style="@style/sSV">
+        <ScrollView
+            android:id="@+id/sSV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.85">
 
-            <LinearLayout style="@style/sLL">
+            <LinearLayout
+                android:id="@+id/sLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="25dp"
+                android:paddingBottom="35dp">
 
                 <LinearLayout style="@style/sSect">
 
@@ -60,6 +70,42 @@
                             android:orientation="vertical"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/sAddWallpaper"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/s_add_wp_bg"
+                            app:layout_constraintTop_toBottomOf="@id/sWallpapers">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/s_add_wp_stroke" />
+
+                            <TextView
+                                android:id="@+id/sAddWPTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="14dp"
+                                android:text="@string/selectAPic"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/sAddWPIV"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/sAddWPIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:padding="13dp"
+                                android:src="@drawable/add_1_blue"
+                                app:layout_constraintEnd_toEndOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
@@ -105,7 +151,9 @@
                                 <SeekBar style="@style/sCPSB" />
                             </LinearLayout>
 
-                            <androidx.constraintlayout.widget.ConstraintLayout style="@style/sCPTitle">
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                style="@style/sCPTitle"
+                                android:layout_marginTop="13dp">
 
                                 <TextView
                                     style="@style/sCPTV"
@@ -147,7 +195,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:paddingTop="3dp"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <androidx.constraintlayout.widget.ConstraintLayout style="@style/sArngTR">
@@ -172,7 +219,9 @@
                                     app:layout_constraintTop_toTopOf="@id/sArngFSp" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
-                            <androidx.constraintlayout.widget.ConstraintLayout style="@style/sArngTR">
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                style="@style/sArngTR"
+                                android:layout_marginTop="5dp">
 
                                 <TextView
                                     android:id="@+id/sArngMTV"
@@ -192,6 +241,30 @@
                                     style="@style/sArngSpMark"
                                     app:layout_constraintEnd_toEndOf="@id/sArngMSp"
                                     app:layout_constraintTop_toTopOf="@id/sArngMSp" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                style="@style/sArngTR"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/sArngPTV"
+                                    style="@style/sArngTV"
+                                    android:text="@string/sPArrangement" />
+
+                                <Spinner
+                                    android:id="@+id/sArngPSp"
+                                    style="@style/sArngSp" />
+
+                                <ImageView
+                                    android:id="@+id/sArngPSw"
+                                    style="@style/sArngSw"
+                                    app:layout_constraintEnd_toStartOf="@id/sArngPSp" />
+
+                                <ImageView
+                                    style="@style/sArngSpMark"
+                                    app:layout_constraintEnd_toEndOf="@id/sArngPSp"
+                                    app:layout_constraintTop_toTopOf="@id/sArngPSp" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </LinearLayout>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -248,44 +321,17 @@
             </LinearLayout>
         </ScrollView>
 
-        <ScrollView
-            style="@style/sSV"
-            android:visibility="gone">
-
-            <LinearLayout style="@style/sLL">
-
-            </LinearLayout>
-        </ScrollView>
-
-        <ScrollView
-            style="@style/sSV"
-            android:visibility="gone">
-
-            <LinearLayout style="@style/sLL">
-
-            </LinearLayout>
-        </ScrollView>
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/sFAB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="0dp"
+            android:layout_margin="5dp"
             android:contentDescription="@string/sFAB"
             android:rotation="-90"
             android:src="@drawable/play_3_ntf"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/sBNV"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@color/sBNV"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/settings_bnv" />
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/sBGShower"
@@ -298,13 +344,39 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop" />
 
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/sBGShowerBtnBG"
+            app:layout_constraintBottom_toBottomOf="@id/sBGShowerClose"
+            app:layout_constraintLeft_toLeftOf="@id/sBGShowerClose"
+            app:layout_constraintRight_toRightOf="@id/sBGShowerClose"
+            app:layout_constraintTop_toTopOf="@id/sBGShowerClose" />
+
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/square_1_tp_to_white_alpha_xml"
+            android:id="@+id/sBGShowerClose"
+            style="@style/sBGShowerBtn"
             android:padding="20dp"
             android:src="@drawable/close_2_white"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/sBGShowerBtnBG"
+            app:layout_constraintBottom_toBottomOf="@id/sBGShowerDelete"
+            app:layout_constraintLeft_toLeftOf="@id/sBGShowerDelete"
+            app:layout_constraintRight_toRightOf="@id/sBGShowerDelete"
+            app:layout_constraintTop_toTopOf="@id/sBGShowerDelete" />
+
+        <ImageView
+            android:id="@+id/sBGShowerDelete"
+            style="@style/sBGShowerBtn"
+            android:padding="15dp"
+            android:src="@drawable/delete_1_white"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

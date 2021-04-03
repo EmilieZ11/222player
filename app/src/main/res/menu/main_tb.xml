@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
-        android:id="@+id/mtbRefreshList"
-        android:title="@string/tbRefreshList" />
-
+        android:id="@+id/mtbSubtitle"
+        android:title="@string/tbSubtitle"
+        android:visible="false" />
     <item
-        android:id="@+id/mtbUpdate"
-        android:title="@string/tbUpdate" />
-
+        android:id="@+id/mtbSettings"
+        android:title="@string/tbSettings" />
     <item
         android:id="@+id/mtbAboutUs"
         android:title="@string/tbAboutUs" />

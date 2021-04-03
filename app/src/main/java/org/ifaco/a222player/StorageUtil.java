@@ -45,21 +45,9 @@ class StorageUtil {
         editor.apply();
     }
 
-    void storeAudioListIndex(int index) {
-        preferences = context.getSharedPreferences(STORAGE, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putInt("audioListIndex", index);
-        editor.apply();
-    }
-
     int loadAudioIndex() {
         preferences = context.getSharedPreferences(STORAGE, Context.MODE_PRIVATE);
         return preferences.getInt("audioIndex", -1);//return -1 if no data found
-    }
-
-    int loadAudioListIndex() {
-        preferences = context.getSharedPreferences(STORAGE, Context.MODE_PRIVATE);
-        return preferences.getInt("audioListIndex", -1);//return -1 if no data found
     }
 
     void clearCachedAudioPlaylist() {

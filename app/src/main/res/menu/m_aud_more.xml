@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mMAudAddToPL"
+        android:title="@string/mMAudAddToPL" />
+    <item
+        android:id="@+id/mMAudDlt"
+        android:title="@string/mMAudDlt" />
+    <item
+        android:id="@+id/mMAudProp"
+        android:title="@string/mMAudProp" />
+</menu>

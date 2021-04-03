@@ -2,19 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/awBody"
     android:layout_width="match_parent"
-    android:layout_height="68dp"
+    android:layout_height="40dp"
     android:background="@color/awBody"
     android:layoutDirection="ltr">
 
     <ImageView
         android:id="@+id/awAlbumArt"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:adjustViewBounds="true"
         android:background="@color/awAlbumArt"
-        android:padding="20px"
-        android:src="@drawable/launcher" />
+        android:padding="9dp"
+        android:src="@drawable/play_3_ntf" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -29,20 +29,19 @@
             android:id="@+id/awTitle"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_weight="4"
+            android:fontFamily="sans-serif"
             android:textAlignment="center"
             android:textColor="@color/awTitle"
-            android:textSize="14sp" />
+            android:textSize="12dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="7"
+            android:layout_weight="6"
             android:orientation="horizontal"
-            android:paddingLeft="20dp"
-            android:paddingTop="6dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="8dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
             android:weightSum="3">
 
             <RelativeLayout style="@style/awRlButtons">

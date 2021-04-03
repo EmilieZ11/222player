@@ -10,41 +10,98 @@
 
     <!-- GLOBAL -->
     <color name="tp">#00000000</color>
+    <color name="tbOfm">@color/colorPrimary</color>
+    <color name="mediaMore">@color/textColorPrimary</color>
+    <color name="folder_2_white">@color/textColorPrimary</color>
 
     <!-- Main -->
-    <color name="mToolbarV">@color/textColorPrimary</color>
+    <color name="mContainer">#000</color>
+    <color name="mToolbarV">#FFF</color>
     <color name="mToolbarT">@color/colorPrimary</color>
     <color name="mPanelV">@color/tp</color>
     <color name="mNavigationV">#22000000</color>
-    <color name="mNavListV">#EE000000</color>
-    <color name="mFolTvItem">#FFF</color>
-    <color name="mFolTvItemPath">#F0F0F0</color>
-    <color name="mNavBackV">#BBFFFFFF</color>
+    <color name="mNavList">#F0000000</color>
+    <color name="mItemSelected">#65FFFFFF</color>
+    <color name="mNavBackV">@color/textColorPrimary</color>
     <color name="mNavBackT">@color/colorPrimary</color>
     <color name="mDescTVT">@color/textColorPrimary</color>
     <color name="mDescV">#00FFFFFF</color>
     <color name="mDurT">@color/textColorPrimary</color>
     <color name="mLoadingV">#FFF</color>
-    <color name="mLoadingT">@color/colorPrimary</color>
     <color name="PD1V">@color/textColorPrimary</color>
     <color name="PD1T">@color/colorPrimary</color>
     <color name="ntfBG">@color/awBody</color>
     <color name="ntfT">@color/colorPrimary</color>
     <color name="ntfColour">@color/ntfT</color>
+    <color name="mVVFrame">#000</color>
+    <color name="mToast">@color/mPanelBg</color>
+    <color name="mToastTV">#FFF</color>
+    <color name="mPlayPauseBG">#FFF</color>
+    <color name="mLoadingTV">@color/colorPrimary</color>
+    <color name="mLoadingVersion">#222</color>
+    <color name="mFileInfo">#99000000</color>
+    <color name="mSeekBar">#FFF</color>
+    <color name="mSeekBarBG">#55FFFFFF</color>
+    <color name="mSeekBarReplica">#33FFFFFF</color>
+    <color name="mPanelBg">#79000000</color>
+    <color name="mNavLoadingCover">#20000000</color>
+    <color name="mBadges">@color/tp</color>
+    <color name="mBadgeBT">#BBFFFFFF</color>
+    <color name="mBadgeBG">#FFF</color>
+    <color name="mNTSearch">@color/colorPrimary</color>
+    <color name="mSelectingBG">#92000000</color>
+    <color name="mNavAddPL">@color/textColorPrimary</color>
+    <color name="mNavAddPLET">@color/tp</color>
+    <color name="mSVT">@color/textColorPrimary</color>
+    <color name="mSVV">@color/mPanelBg</color>
+    <color name="mSTManager">@color/mPanelBg</color>
+
+    <!-- display_settings.xml -->
+    <color name="mDSIcons">#CEFFFFFF</color>
+    <color name="mDSEqSB">#FFF</color>
+    <color name="mDSEqSBBG">#92FFFFFF</color>
+    <color name="mSAPRSpinner">#000</color>
+    <color name="mSAPRSpinnerDD">#000</color>
+    <color name="mSAPRSpinnerWhitened">#FFF</color>
 
     <!-- AppWidget -->
     <color name="awBody">#EEFFFFFF</color>
-    <color name="awAlbumArt">#110000E2</color>
+    <color name="awAlbumArt">@color/colorPrimary</color><!--#090000E2-->
     <color name="awTitle">@color/colorPrimary</color>
     <color name="awButtons">@color/colorPrimary</color>
 
-    <!-- BasicMessage1 -->
+    <!-- basic_message_1.xml -->
     <color name="bm1Container">#AA000000</color>
     <color name="bm1Body">@color/colorPrimaryDark</color>
     <color name="bm1TitleT">#FFF</color>
     <color name="bm1ContentsV">#FFF</color>
     <color name="bm1ContentsT">#000</color>
     <color name="bm1BtnsArea">#FFF</color>
+    <color name="bm1BtnYesSpecial">#41A345</color>
+    <color name="bm1TitleIV">@color/colorPrimary</color>
 
-    <!--<color name=""></color>-->
+    <!-- file_info.xml -->
+    <color name="fiBody">#FFF</color>
+    <color name="fiTitle">@color/colorPrimary</color>
+    <color name="fiDelete">#F44336</color>
+    <color name="fiSave">#4CAF50</color>
+    <color name="fiItem0">@color/tp</color>
+    <color name="fiItem1">#110000E2</color>
+    <color name="fiAttr">@color/colorPrimary</color>
+    <color name="fiValue">#000</color>
+    <color name="fiValueHint">#92000000</color>
+    <color name="fiAlbumArt">#00000000</color>
+    <color name="fiName">#000</color>
+    <color name="fiClose">#FFF</color>
+
+    <!-- Settings -->
+    <color name="sContainer">#FFF</color>
+    <color name="sSect">#EEFFFFFF</color>
+    <color name="sSectTitle">#00FFFFFF</color>
+    <color name="sSectTIV">@color/colorPrimary</color>
+    <color name="sWPBGOff">@color/colorPrimary</color>
+    <color name="sAddWPBorder">@color/colorPrimary</color>
+    <color name="sCPTV">@color/colorPrimary</color>
+    <color name="sArngSpnDD">#000</color>
+    <color name="sBGShowerBtnBG">#92000000</color>
 </resources>

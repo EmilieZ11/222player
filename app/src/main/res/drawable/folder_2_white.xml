@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:width="222dp"
+                android:height="222dp" />
+            <solid android:color="@color/tp" />
+        </shape>
+    </item>
+    <item android:top="32dp"><!--222 x 190-->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/folder_2_white" />
+        </shape>
+    </item>
+    <item
+        android:bottom="190dp"
+        android:right="143dp"><!--79 x 32-->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/folder_2_white" />
+        </shape>
+    </item>
+    <item
+        android:bottom="143dp"
+        android:left="79dp"
+        android:right="64dp"><!--79 x 79-->
+        <rotate
+            android:fromDegrees="55"
+            android:pivotX="0%"
+            android:pivotY="0%"
+            android:toDegrees="55">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/folder_2_white" />
+            </shape>
+        </rotate>
+    </item>
+    <!-- Be careful of the sizes! If the width of an item is more than the BG's, the shape is no more a square! -->
+    <!-- Specifying width and height for the shapes, except the BG, is not required. -->
+</layer-list>
