@@ -3,11 +3,11 @@ package org.ifaco.a222player;
 import java.io.Serializable;
 
 class Audio implements Serializable {
-    private String data, name, title, album, artist, mime;
+    private String data, name, title, album, artist;
     private long albumId;
     private int dur;
 
-    Audio(String data, String name, String title, String album, String artist, long albumId, int dur, String mime) {
+    Audio(String data, String name, String title, String album, String artist, long albumId, int dur) {
         this.data = data;
         this.name = name;
         this.title = title;
@@ -15,7 +15,6 @@ class Audio implements Serializable {
         this.artist = artist;
         this.albumId = albumId;
         this.dur = dur;
-        this.mime = mime;
     }
 
     String getData() {
@@ -72,13 +71,5 @@ class Audio implements Serializable {
 
     void setDur(int dur) {
         this.dur = dur;
-    }
-
-    String getMime() {
-        return mime;
-    }
-
-    void setMime(String mime) {
-        this.mime = mime;
     }
 }

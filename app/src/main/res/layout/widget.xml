@@ -13,8 +13,8 @@
         android:layout_alignParentLeft="true"
         android:adjustViewBounds="true"
         android:background="@color/awAlbumArt"
-        android:padding="15dp"
-        android:src="@mipmap/launcher" />
+        android:padding="20px"
+        android:src="@drawable/launcher" />
 
     <LinearLayout
         android:layout_width="0dp"

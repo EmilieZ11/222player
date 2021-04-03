@@ -1,32 +1,22 @@
 <resources>
-    <!-- GLOBAL -->
     <string name="app_name">222 Player</string>
-    <string name="ok1">OK</string>
-    <string name="yes1">Yes</string>
-    <string name="no1">No</string>
-    <string-array name="size">
-        <item>Bytes</item>
-        <item>KB</item>
-        <item>MB</item>
-        <item>GB</item>
-    </string-array>
 
     <!-- Main -->
+    <string name="noPermRES">The app has no permission to read the external storage.</string>
     <string name="noPermWES">The app has no access to the external storage.</string>
     <string name="tbUpdate">Check for Updates</string>
     <string name="tbAboutUs">About Us</string>
     <string name="tbRefreshList">Refresh List</string>
-    <string name="tbSwitchToVideo">Switch to Video Player</string>
-    <string name="tbSwitchToAudio">Switch to Audio Player</string>
-    <string name="tbLastPlayed">Last Played</string>
-    <string name="tbSettings">Settings</string>
-    <string name="tbNight">Night Mode</string>
+    <string name="ok1">OK</string>
+    <string name="yes1">Yes</string>
+    <string name="no1">No</string>
     <string name="updating">Updating&#8230;</string>
     <string name="aboutUs">Follow us in Instagram: @fulcrum1378</string>
     <string name="updateSentence1">This app\'s current version is&#160;</string>
     <string name="updateSentence2">&#160;, while the last version is&#160;</string>
     <string name="updateSentence3">&#160;. Are you sure you want to update it?</string>
     <string name="upToDate">Your app is up to date.</string>
+    <string name="updateExpln">The app needs to access the external storage in order to update itself.</string>
     <string name="cfuError1">Checking for updates was failed!</string>
     <string name="cfuError2">The updates weren\'t downloaded!</string>
     <string name="cfuError3">The current version of the app is vague!</string>
@@ -36,115 +26,21 @@
     <string name="noInternet">Please check your internet connection.</string>
     <string name="toExit">Double tap to exit&#8230;</string>
     <string name="noSound">You have not a single audio in your device.</string>
-    <string name="noVideo">You have not a single video in your device.</string>
-    <string name="accessStorage">The app needs to access the external storage.</string>
+    <string name="mNavBack">Go Back&#8230;</string>
+    <string name="accessStorage">The app need to access to external storage.</string>
     <string name="endOfPlaylist">End of the playlist!</string>
     <string name="startOfPlaylist">Beginning of the playlist!</string>
-    <string name="audioPlayer">Media Player</string>
-    <string name="musicInfoTitle">File Properties</string>
+    <string name="audioPlayer">Audio Player</string>
+    <string name="musicInfoTitle">Audio Information</string>
+    <string name="MIName">Name:&#160;</string>
+    <string name="MITitle">Title:&#160;</string>
+    <string name="MIAlbum">Album:&#160;</string>
+    <string name="MIArtist">Artist:&#160;</string>
+    <string name="MIDur">Duration:&#160;</string>
     <string name="mNormalDur">00:00 / 00:00</string>
     <string name="unreadable">Unable to read the selected file!</string>
-    <string name="onExitWhilePlaying">Do you really want to close the app? You can minimize the app so it can keep playing in the background&#8230;</string>
-    <string name="onExitWhileVPlaying">Do you really want to close the app?</string>
-    <string name="errorOccurred">Unfortunately an error occurred!</string>
-    <string name="shuffleOn">Shuffle On</string>
-    <string name="shuffleOff">Shuffle Off</string>
-    <string name="noRepeat">No Repeat</string>
-    <string name="repeatAll">Repeat All</string>
-    <string name="repeatOnce">Repeat Once</string>
-    <string name="refreshed">Refresh done</string>
-    <string-array name="crop">
-        <item>Real Size</item>
-        <item>Fit to Screen</item>
-        <item>Stretch</item>
-        <item>Crop</item>
-    </string-array>
-    <string-array name="fileInfoList">
-        <item>Type</item>
-        <item>Path</item>
-        <item>Size</item>
-        <item>Title</item>
-        <item>Album</item>
-        <item>Artist</item>
-        <item>Length</item>
-        <item>Last Modified</item>
-    </string-array>
-    <string name="deleteFileT">Delete File</string>
-    <string name="deleteFile">Are you sure you want to delete this file?\n\n</string>
-    <string name="couldntDelete">Could not delete the selected file!</string>
-    <string name="deleted">The file was successfully deleted.</string>
-    <string name="couldntRename">Could not rename the selected file!</string>
-    <string name="renamed">The file was successfully renamed.</string>
-    <string name="suchFileExists">There\'s another file in the storage with such address!</string>
-    <string name="askOnSwitchToVideo">Are you sure you want to switch to Video Player?</string>
-    <string name="askOnSwitchToAudio">Are you sure you want to switch to Audio Player?</string>
-    <string name="visit">Visit</string>
-    <string name="myInsta">https://www.instagram.com/fulcrum1378/</string>
-    <string name="audios">Audios</string>
-    <string name="videos">Videos</string>
-    <string name="couldNotGainAudioFocus">Could not gain audio focus.</string>
-    <string name="mpNotSeekable">Seeking is not possible.</string>
-    <string name="cannotOpenFile">Cannot open this file.</string>
-    <string name="unknownErrorOccurred">Unfortunately an unknown error occurred!</string>
-    <string name="mpUnreadable">File is not readable.</string>
-    <string name="mpUnsupported">File is readable, but the device doesn\'t support such its type.</string>
-    <string name="mpTimedOut">Opening the file took more than usuall time!</string>
-    <string name="lowSystemLevel">Low-level system!</string>
-    <string name="badInterleaving">This file is improperly interleaved; it may cause errors while playing.</string>
-    <string name="vpTrackLagging">This video is too complex and possibly only the audio will be played fine.</string>
-    <string name="vpUnsupportedST">The subtitle is not supported.</string>
-    <string name="vpSTTimedOut">Could not load the subtitle!</string>
-
-    <!-- Settings -->
-    <string name="sbnvApp">App</string>
-    <string name="sbnvAudio">Audio</string>
-    <string name="sbnvVideo">Video</string>
-    <string name="sWallpaper">Wallpapers</string>
-    <string name="sAtLeastOneWP">At least one picture must be selected.</string>
-    <string name="sColorPrimaries">Theme</string>
-    <string name="sCP1">Colour A (most icons and texts):</string>
-    <string name="sCP2">Colour B (most background colours):</string>
-    <string name="sCPDefault">Default</string>
-    <string name="sArrangement">List Arrangement</string>
-    <string name="sFArrangement">Folders:</string>
-    <string name="sMArrangement">Audio/Video:</string>
-    <string-array name="sFRadios">
-        <item>Name</item>
-        <item>Number of Files</item>
-        <item>Size</item>
-        <item>Storage</item>
-        <item>Last Modified</item>
-    </string-array>
-    <string-array name="sMRadios">
-        <item>File Name</item>
-        <item>Title</item>
-        <item>Size</item>
-        <item>Length</item>
-        <item>Album</item>
-        <item>Artist</item>
-        <item>Type</item>
-        <item>Last Modified</item>
-    </string-array>
-    <string name="sArngAsc">Ascending</string>
-    <string name="sArngDsc">Descending</string>
-    <string name="sFont">Font</string>
-    <string-array name="sFonts">
-        <item>casual</item>
-        <item>cursive</item>
-        <item>monospace</item>
-        <item>sans-serif</item>
-        <item>sans-serif-black</item>
-        <item>sans-serif-condensed</item>
-        <item>sans-serif-condensed-light</item>
-        <item>sans-serif-light</item>
-        <item>sans-serif-medium</item>
-        <item>sans-serif-smallcaps</item>
-        <item>sans-serif-thin</item>
-        <item>serif</item>
-        <item>serif-monospace</item>
-    </string-array>
-    <string name="sFontTV">%</string>
-    <string name="sFAB">Go Up&#8230;</string>
+    <string name="mLoading1">Preparing the player&#8230;</string>
+    <string name="onExitWhilePlaying">Do you really want to stop and close the player? You can minimize the app so it can keep playing in the background&#8230;</string>
 
     <!--<string name=""></string>-->
 </resources>

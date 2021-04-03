@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <item
-        android:id="@+id/mtbSwitchMedia"
-        android:icon="@drawable/video_1_blue"
-        android:title="@string/tbSwitchToVideo"
-        app:showAsAction="ifRoom|collapseActionView" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/mtbRefreshList"
-        android:icon="@drawable/refresh_1_blue"
-        android:title="@string/tbRefreshList"
-        app:showAsAction="ifRoom|collapseActionView" />
-
-    <item
-        android:id="@+id/mtbLastPlayed"
-        android:title="@string/tbLastPlayed" />
-
-    <item
-        android:id="@+id/mtbSettings"
-        android:title="@string/tbSettings" />
+        android:title="@string/tbRefreshList" />
 
     <item
         android:id="@+id/mtbUpdate"
