@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sContainer"
+    android:layoutDirection="ltr"
+    tools:context=".Settings">
+
+    <View
+        android:id="@+id/sMotor"
+        style="@style/Motor1" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/sToolbar"
+        style="@style/Toolbar1"
+        android:background="@color/sToolbarV"
+        app:navigationIcon="@drawable/back_1_blue"
+        app:subtitle="@string/tbSettings" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/sTBBorderBottom"
+        app:layout_constraintTop_toBottomOf="@id/sToolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sBody"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/sBody"
+        app:layout_constraintBottom_toTopOf="@id/sBNV"
+        app:layout_constraintLeft_toLeftOf="@id/sToolbar"
+        app:layout_constraintRight_toRightOf="@id/sToolbar"
+        app:layout_constraintTop_toBottomOf="@id/sToolbar">
+
+        <ScrollView style="@style/sSV">
+
+            <LinearLayout style="@style/sLL">
+
+                <LinearLayout style="@style/sSect">
+
+                    <LinearLayout style="@style/sSectTitle">
+
+                        <ImageView style="@style/sSectTIV" />
+
+                        <TextView
+                            style="@style/sSectTTV"
+                            android:text="@string/sWallpaper" />
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout style="@style/sSectBody">
+
+                        <LinearLayout
+                            android:id="@+id/sWallpapers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/sSect">
+
+                    <LinearLayout style="@style/sSectTitle">
+
+                        <ImageView style="@style/sSectTIV" />
+
+                        <TextView
+                            style="@style/sSectTTV"
+                            android:text="@string/sColorPrimaries" />
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout style="@style/sSectBody">
+
+                        <LinearLayout
+                            android:id="@+id/sColourPrimaries"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout style="@style/sCPTitle">
+
+                                <TextView
+                                    style="@style/sCPTV"
+                                    android:text="@string/sCP1"
+                                    app:layout_constraintEnd_toStartOf="@id/sCP1DEF" />
+
+                                <TextView
+                                    android:id="@+id/sCP1DEF"
+                                    style="@style/sCPDEF" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <LinearLayout style="@style/sCPLL">
+
+                                <SeekBar style="@style/sCPSB" />
+
+                                <SeekBar style="@style/sCPSB" />
+
+                                <SeekBar style="@style/sCPSB" />
+                            </LinearLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout style="@style/sCPTitle">
+
+                                <TextView
+                                    style="@style/sCPTV"
+                                    android:text="@string/sCP2"
+                                    app:layout_constraintEnd_toStartOf="@id/sCP2DEF" />
+
+                                <TextView
+                                    android:id="@+id/sCP2DEF"
+                                    style="@style/sCPDEF" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <LinearLayout style="@style/sCPLL">
+
+                                <SeekBar style="@style/sCPSB" />
+
+                                <SeekBar style="@style/sCPSB" />
+
+                                <SeekBar style="@style/sCPSB" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/sSect">
+
+                    <LinearLayout style="@style/sSectTitle">
+
+                        <ImageView style="@style/sSectTIV" />
+
+                        <TextView
+                            style="@style/sSectTTV"
+                            android:text="@string/sArrangement" />
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout style="@style/sSectBody">
+
+                        <LinearLayout
+                            android:id="@+id/sArrangement"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="3dp"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout style="@style/sArngTR">
+
+                                <TextView
+                                    android:id="@+id/sArngFTV"
+                                    style="@style/sArngTV"
+                                    android:text="@string/sFArrangement" />
+
+                                <Spinner
+                                    android:id="@+id/sArngFSp"
+                                    style="@style/sArngSp" />
+
+                                <ImageView
+                                    android:id="@+id/sArngFSw"
+                                    style="@style/sArngSw"
+                                    app:layout_constraintEnd_toStartOf="@id/sArngFSp" />
+
+                                <ImageView
+                                    style="@style/sArngSpMark"
+                                    app:layout_constraintEnd_toEndOf="@id/sArngFSp"
+                                    app:layout_constraintTop_toTopOf="@id/sArngFSp" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout style="@style/sArngTR">
+
+                                <TextView
+                                    android:id="@+id/sArngMTV"
+                                    style="@style/sArngTV"
+                                    android:text="@string/sMArrangement" />
+
+                                <Spinner
+                                    android:id="@+id/sArngMSp"
+                                    style="@style/sArngSp" />
+
+                                <ImageView
+                                    android:id="@+id/sArngMSw"
+                                    style="@style/sArngSw"
+                                    app:layout_constraintEnd_toStartOf="@id/sArngMSp" />
+
+                                <ImageView
+                                    style="@style/sArngSpMark"
+                                    app:layout_constraintEnd_toEndOf="@id/sArngMSp"
+                                    app:layout_constraintTop_toTopOf="@id/sArngMSp" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/sSect">
+
+                    <LinearLayout style="@style/sSectTitle">
+
+                        <ImageView style="@style/sSectTIV" />
+
+                        <TextView
+                            style="@style/sSectTTV"
+                            android:text="@string/sFont" />
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout style="@style/sSectBody">
+
+                        <Spinner
+                            android:id="@+id/sFontSP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/spinner_bg_2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            style="@style/sArngSpMark"
+                            app:layout_constraintEnd_toEndOf="@id/sFontSP"
+                            app:layout_constraintTop_toTopOf="@id/sFontSP" />
+
+                        <TextView
+                            android:id="@+id/sFontTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3dp"
+                            android:text="100%"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="@id/sFontSB"
+                            app:layout_constraintStart_toStartOf="@id/sFontSB"
+                            app:layout_constraintTop_toBottomOf="@id/sFontSP" />
+
+                        <SeekBar
+                            android:id="@+id/sFontSB"
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:max="20"
+                            android:progress="10"
+                            app:layout_constraintTop_toBottomOf="@id/sFontTV" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            style="@style/sSV"
+            android:visibility="gone">
+
+            <LinearLayout style="@style/sLL">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            style="@style/sSV"
+            android:visibility="gone">
+
+            <LinearLayout style="@style/sLL">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:contentDescription="@string/sFAB"
+            android:rotation="-90"
+            android:src="@drawable/play_3_ntf"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/sBNV"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/sBNV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/settings_bnv" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sBGShower"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/square_1_tp_to_white_alpha_xml"
+            android:padding="20dp"
+            android:src="@drawable/close_2_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

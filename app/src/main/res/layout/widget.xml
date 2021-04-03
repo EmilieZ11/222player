@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/awBody"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@color/awBody"
+    android:layoutDirection="ltr">
+
+    <ImageView
+        android:id="@+id/awAlbumArt"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:background="@color/awAlbumArt"
+        android:padding="15dp"
+        android:src="@mipmap/launcher" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/awAlbumArt"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/awTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:textAlignment="center"
+            android:textColor="@color/awTitle"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="6dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:weightSum="3">
+
+            <RelativeLayout style="@style/awRlButtons">
+
+                <ImageView
+                    android:id="@+id/awLeft"
+                    style="@style/awButtons"
+                    android:src="@drawable/skip_2_ntf_prev" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/awRlButtons">
+
+                <ImageView
+                    android:id="@+id/awPlayPause"
+                    style="@style/awButtons"
+                    android:src="@drawable/play_3_ntf" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/awRlButtons">
+
+                <ImageView
+                    android:id="@+id/awRight"
+                    style="@style/awButtons"
+                    android:src="@drawable/skip_2_ntf_next" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

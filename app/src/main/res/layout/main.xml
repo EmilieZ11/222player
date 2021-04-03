@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mContainer"
+    android:layoutDirection="ltr"
+    tools:context=".Mahdi">
+
+    <View
+        android:id="@+id/mMotor"
+        style="@style/Motor1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mVVFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mVVFrame"
+        android:visibility="invisible" /><!--android:layerType="none"-->
+
+    <View
+        android:id="@+id/mTouchSensor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:background="@color/mContainer" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/mShwBG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/music_bg_1" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mToolbar"
+            style="@style/Toolbar1"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="7dp"
+            android:background="@color/mToolbarV"
+            app:navigationIcon="@drawable/list_3_blue" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mCrop"
+            style="@style/mUnderTBButtons"
+            app:layout_constraintLeft_toLeftOf="@id/mToolbar"
+            app:layout_constraintTop_toBottomOf="@id/mToolbar">
+
+            <ImageView style="@style/mUnderTBButtonsBG" />
+
+            <ImageView
+                style="@style/mUnderTBButtonsBT"
+                android:src="@drawable/crop_2_blue" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mAddSubtitle"
+            style="@style/mUnderTBButtons"
+            app:layout_constraintRight_toRightOf="@id/mToolbar"
+            app:layout_constraintTop_toBottomOf="@id/mToolbar">
+
+            <ImageView style="@style/mUnderTBButtonsBG" />
+
+            <ImageView
+                style="@style/mUnderTBButtonsBT"
+                android:src="@drawable/subtitle_3_blue" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mPlayerBody"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mToolbar">
+
+            <ImageView
+                android:id="@+id/mAlbumArt"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/mSeekBar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/mPanelBg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/mPanelBg"
+                android:scaleY="1.092"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="@id/mSeekBar" />
+
+            <View
+                android:id="@+id/mSeekBarReplica"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/mSeekBarReplica"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/mSeekBar"
+                app:layout_constraintTop_toTopOf="@id/mSeekBar" />
+
+            <SeekBar
+                android:id="@+id/mSeekBar"
+                style="@style/mBtnAlpha"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layoutDirection="ltr"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_1_xml"
+                android:thumb="@drawable/sb1_thumb"
+                app:layout_constraintBottom_toTopOf="@id/mPanel" />
+            <!--SeekBar must have a specified height in order not to resize unwantedly.-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mPanel"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:background="@color/mPanelV"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingRight="17dp"
+                    android:text="@string/mNormalDur"
+                    android:textColor="@color/mDurT"
+                    android:textDirection="ltr"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <View
+                    style="@style/mSideBtnsBorderRests"
+                    android:rotationY="180"
+                    app:layout_constraintBottom_toBottomOf="@id/mBtnMenuBorderL"
+                    app:layout_constraintRight_toLeftOf="@id/mShuffle"
+                    app:layout_constraintTop_toTopOf="@id/mBtnMenuBorderL" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/mShuffle"
+                    style="@style/mSideBtns"
+                    app:layout_constraintBottom_toBottomOf="@id/mBtnMenuBorderL"
+                    app:layout_constraintRight_toLeftOf="@id/mMoveB"
+                    app:layout_constraintTop_toTopOf="@id/mBtnMenuBorderL">
+
+                    <View style="@style/mSideBtnsBG" />
+
+                    <ImageView
+                        style="@style/mSideBtnsBT"
+                        android:src="@drawable/shuffle_2"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/mMoveB"
+                    style="@style/mSideBtns"
+                    app:layout_constraintBottom_toBottomOf="@id/mBtnMenuBorderL"
+                    app:layout_constraintRight_toLeftOf="@id/mBtnMenuBorderL"
+                    app:layout_constraintTop_toTopOf="@id/mBtnMenuBorderL">
+
+                    <View style="@style/mSideBtnsBG" />
+
+                    <ImageView
+                        style="@style/mSideBtnsBT"
+                        android:rotation="180"
+                        android:src="@drawable/skip_2"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/mBtnMenuBorderL"
+                    style="@style/mSideBtnsBorders"
+                    android:rotationY="180"
+                    app:layout_constraintBottom_toBottomOf="@id/mPlayPause"
+                    app:layout_constraintRight_toLeftOf="@id/mPlayPause"
+                    app:layout_constraintTop_toTopOf="@id/mPlayPause" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/mPlayPause"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        style="@style/mBtnAlpha"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/solid_white_circle" />
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/play_3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/mBtnMenuBorderR"
+                    style="@style/mSideBtnsBorders"
+                    app:layout_constraintBottom_toBottomOf="@id/mPlayPause"
+                    app:layout_constraintLeft_toRightOf="@id/mPlayPause"
+                    app:layout_constraintTop_toTopOf="@id/mPlayPause" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/mMoveF"
+                    style="@style/mSideBtns"
+                    app:layout_constraintBottom_toBottomOf="@id/mBtnMenuBorderR"
+                    app:layout_constraintLeft_toRightOf="@id/mBtnMenuBorderR"
+                    app:layout_constraintTop_toTopOf="@id/mBtnMenuBorderR">
+
+                    <View style="@style/mSideBtnsBG" />
+
+                    <ImageView
+                        style="@style/mSideBtnsBT"
+                        android:src="@drawable/skip_2"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/mRepeat"
+                    style="@style/mSideBtns"
+                    app:layout_constraintBottom_toBottomOf="@id/mBtnMenuBorderR"
+                    app:layout_constraintLeft_toRightOf="@id/mMoveF"
+                    app:layout_constraintTop_toTopOf="@id/mBtnMenuBorderR">
+
+                    <View style="@style/mSideBtnsBG" />
+
+                    <ImageView
+                        style="@style/mSideBtnsBT"
+                        android:src="@drawable/repeat_2"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    style="@style/mSideBtnsBorderRests"
+                    app:layout_constraintBottom_toBottomOf="@id/mBtnMenuBorderR"
+                    app:layout_constraintLeft_toRightOf="@id/mRepeat"
+                    app:layout_constraintTop_toTopOf="@id/mBtnMenuBorderR" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mNavigationV"
+            android:visibility="invisible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mNavList"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/mNavListV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.66">
+
+                <ScrollView
+                    android:id="@+id/mFoldersSV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/mFolders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/mSoundsSV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible">
+
+                    <LinearLayout
+                        android:id="@+id/mSounds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/nav_back_1" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/mNavLoading"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/play_3_ntf"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHeight_percent="0.4"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.4" />
+
+                    <ImageView
+                        android:id="@+id/mNLCircle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/loading_2_circle_1" />
+
+                    <ImageView
+                        android:id="@+id/mNLCircle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/loading_2_circle_2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/mNavLoadingCover" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/mToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mToast"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/mToastIV"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/mToastTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="7dp"
+                android:textColor="@color/mToastTV"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mFileInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mFileInfo"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/mBasicMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@color/bm1Container"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mLoading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mLoadingV">
+
+            <ImageView
+                android:id="@+id/mLoadingIV"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/launcher_1_blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mLoadingIV"
+                app:layout_constraintVertical_bias="0.4"><!--android:layout_marginTop="15dp"-->
+
+                <TextView
+                    android:id="@+id/mLoadingTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/mLoadingTV"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/mLoadingPB"
+                    style="@style/mLoadingPB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:indeterminate="true"
+                    app:layout_constraintLeft_toLeftOf="@id/mLoadingTV"
+                    app:layout_constraintRight_toRightOf="@id/mLoadingTV"
+                    app:layout_constraintTop_toBottomOf="@id/mLoadingTV" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/mLoadingVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/mLoadingVersion"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

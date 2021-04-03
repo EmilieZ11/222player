@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sbnvApp"
+        android:icon="@drawable/launcher_1_blue"
+        android:title="@string/sbnvApp" />
+
+    <item
+        android:id="@+id/sbnvAudio"
+        android:icon="@drawable/sound_2_blue"
+        android:title="@string/sbnvAudio" />
+
+    <item
+        android:id="@+id/sbnvVideo"
+        android:icon="@drawable/video_1_blue"
+        android:title="@string/sbnvVideo" />
+</menu>

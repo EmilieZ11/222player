@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0000E2</color>
+    <color name="colorPrimaryDark">#0000A5</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <color name="textColorPrimary">#FFF</color>
+    <color name="statusBarColor">@color/colorPrimaryDark</color>
+    <color name="windowBackground">#000</color>
+    <color name="navigationBarColor">@color/colorPrimaryDark</color>
+
+    <!-- GLOBAL -->
+    <color name="tp">#00000000</color>
+    <color name="tbNav">@color/colorPrimary</color>
+    <color name="tbOfm">@color/colorPrimary</color>
+    <color name="mediaMore">@color/textColorPrimary</color>
+
+    <!-- Main -->
+    <color name="mContainer">#000</color>
+    <color name="mToolbarV">#EAFFFFFF</color>
+    <color name="mToolbarT">@color/colorPrimary</color>
+    <color name="mPanelV">@color/tp</color>
+    <color name="mNavigationV">#22000000</color>
+    <color name="mNavListV">#F0000000</color>
+    <color name="mFolTvItem">#FFF</color>
+    <color name="mFolTvItemPath">#F0F0F0</color>
+    <color name="mNavBackV">#BBFFFFFF</color>
+    <color name="mNavBackT">@color/colorPrimary</color>
+    <color name="mDescTVT">@color/textColorPrimary</color>
+    <color name="mDescV">#00FFFFFF</color>
+    <color name="mDurT">@color/textColorPrimary</color>
+    <color name="mLoadingV">#FFF</color>
+    <color name="PD1V">@color/textColorPrimary</color>
+    <color name="PD1T">@color/colorPrimary</color>
+    <color name="ntfBG">@color/awBody</color>
+    <color name="ntfT">@color/colorPrimary</color>
+    <color name="ntfColour">@color/ntfT</color>
+    <color name="mVVFrame">#000</color>
+    <color name="mToast">#79000000</color>
+    <color name="mToastTV">#FFF</color>
+    <color name="mPlayPauseBG">#FFF</color>
+    <color name="mLoadingPB">@color/colorAccent</color>
+    <color name="mLoadingTV">@color/colorPrimary</color>
+    <color name="mLoadingVersion">@color/colorPrimary</color>
+    <color name="mFileInfo">#99000000</color>
+    <color name="mSeekBar">#FFF</color>
+    <color name="mSeekBarBG">#55FFFFFF</color>
+    <color name="mSeekBarReplica">#33FFFFFF</color>
+    <color name="mPanelBg">#79000000</color>
+    <color name="mNavLoadingCover">#20000000</color>
+
+    <!-- AppWidget -->
+    <color name="awBody">#EEFFFFFF</color>
+    <color name="awAlbumArt">#090000E2</color>
+    <color name="awTitle">@color/colorPrimary</color>
+    <color name="awButtons">@color/colorPrimary</color>
+
+    <!-- basic_message_1.xml -->
+    <color name="bm1Container">#AA000000</color>
+    <color name="bm1Body">@color/colorPrimaryDark</color>
+    <color name="bm1TitleT">#FFF</color>
+    <color name="bm1ContentsV">#FFF</color>
+    <color name="bm1ContentsT">#000</color>
+    <color name="bm1BtnsArea">#FFF</color>
+    <color name="bm1BtnYesSpecial">#41A345</color>
+    <color name="bm1TitleIV">#FFF</color>
+
+    <!-- file_info.xml -->
+    <color name="fiBody">#FFF</color>
+    <color name="fiTitle">@color/colorPrimary</color>
+    <color name="fiDelete">#F44336</color>
+    <color name="fiSave">#4CAF50</color>
+    <color name="fiItem0">@color/tp</color>
+    <color name="fiItem1">#110000E2</color>
+    <color name="fiAttr">@color/colorPrimary</color>
+    <color name="fiValue">#000</color>
+    <color name="fiAlbumArt">#00000000</color>
+    <color name="fiName">#000</color>
+    <color name="fiClose">#FFF</color>
+
+    <!-- Settings -->
+    <color name="sToolbarV">@color/textColorPrimary</color>
+    <color name="sBNV">@color/mToolbarV</color>
+    <color name="sbnvBtnFalse">#666</color>
+    <color name="sBody">#00000000</color>
+    <color name="sContainer">#FFF</color>
+    <color name="sTBBorderBottom">#DDD</color>
+    <color name="sSectTIV">@color/colorPrimary</color>
+    <color name="sWPBGOff">@color/colorPrimary</color>
+    <color name="sNight">#000</color>
+    <color name="sNightOff">#FFF</color>
+    <color name="sCPTV">@color/colorPrimary</color>
+    <color name="sArngSpnDD">#000</color>
+    <color name="sArngSpnDDN">#FFF</color>
+    <color name="sArngSpnDDBGN">#222</color>
+
+    <!--<color name=""></color>-->
+</resources>

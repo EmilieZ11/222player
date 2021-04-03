@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fiBody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="20dp"
+    android:background="@color/fiBody">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fiTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fiTitle"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/fiTIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="19dp"
+            android:src="@drawable/edit_file_1_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/fiClose"
+            app:layout_constraintStart_toEndOf="@id/fiTIcon"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/fiTText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/musicInfoTitle"
+                android:textColor="@color/bm1TitleT"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/fiClose"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/square_1_tp_to_white_alpha_xml"
+            android:padding="30dp"
+            android:src="@drawable/close_2_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/fiSV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fiTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fiCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="55dp">
+
+            <LinearLayout
+                android:id="@+id/fiLLFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fiItem0"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fiAlbumArtDiv"
+                    android:layout_width="0dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="3"
+                    android:paddingEnd="2dp">
+
+                    <ImageView
+                        android:id="@+id/fiAlbumArt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="85dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/fiAlbumArt"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fiNameDiv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:minHeight="85dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp">
+
+                    <EditText
+                        android:id="@+id/fiNameEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="@color/fiName"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/fiName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/fiName"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fiLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/fiLLFirst" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/fiSave"
+        style="@style/fiButton"
+        android:layout_marginEnd="12dp"
+        android:alpha="0.4"
+        android:background="@drawable/solid_white_circle"
+        android:padding="11dp"
+        android:src="@drawable/save_1_white"
+        app:layout_constraintEnd_toStartOf="@id/fiDelete" />
+
+    <ImageView
+        android:id="@+id/fiDelete"
+        style="@style/fiButton"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/solid_white_circle"
+        android:padding="9dp"
+        android:src="@drawable/delete_1_white"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
